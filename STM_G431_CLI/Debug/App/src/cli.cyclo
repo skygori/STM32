@@ -1,0 +1,8 @@
+../App/src/cli.c:40:6:cliInit	2
+../App/src/cli.c:53:6:cliAdd	2
+../App/src/cli.c:65:6:cliHelp	2
+../App/src/cli.c:77:6:cliPrintf	1
+../App/src/cli.c:86:6:cliIsStr	2
+../App/src/cli.c:94:9:cliGetData	1
+../App/src/cli.c:103:6:cliKeepLoop	2
+../App/src/cli.c:111:6:cliMain	8
