@@ -11,6 +11,9 @@
 
 #include "def.h"
 
+#include "led.h"
+#include "utils.h"
+
 void apInit(void);
 void apMain(void);
 
