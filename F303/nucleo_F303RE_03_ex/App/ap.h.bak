@@ -13,7 +13,6 @@
 
 #include "led.h"
 #include "utils.h"
-#include "uart.h"
 
 void apInit(void);
 void apMain(void);

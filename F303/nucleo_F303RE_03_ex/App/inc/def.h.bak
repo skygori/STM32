@@ -10,15 +10,12 @@
 
 #include <stdbool.h>
 #include <stdint.h>
-#include <stdarg.h> //
-#include <stdio.h>  //
+#include <stdarg.h>
+#include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
 
 #include "main.h"
-
-// 2026.05.26. UART add
-
 
 #define _DEF_FIRMWARE_VERSION       "V260522R01"
 #define _DEF_BOARD_NAME             "NUCLEO_F303"
