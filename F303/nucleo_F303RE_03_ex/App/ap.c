@@ -16,6 +16,7 @@ uint32_t cnt = 0;
 void apInit(void)
 {
 	ledInit();
+	uartInit();
 }
 
 void apMain(void)
@@ -46,7 +47,7 @@ void apMain(void)
 	    ledToggle(RUN_LED);
 
 	    //uartWrite(_DEF_CH1,(uint8_t *) "test\n", 5);
-	    uartPrintf(_DEF_CH1, "test %d\n", millis());
+	    //uartPrintf(_DEF_CH1, "test %d\n", millis());
 	  }
 
 //	  if(millis() - pre_time2 >= 1000)
@@ -66,6 +67,15 @@ void apMain(void)
 
 	  //delay(500);
 
+	  if(uartAvailable(_DEF_CH1) > 0)
+	  {
+	    uint8_t rx_data;
+
+	    rx_data = uartRead(_DEF_CH1);
+	    uartPrintf(_DEF_CH1, "rx_data : 0x%02X (%c)\n", rx_data, rx_data);
+	  }
+
+	  //uartPrintf(_DEF_CH1, "dma cndtr : %d\n", huart1.hdmarx->Instance->CNDTR);
 	}
 
 }
